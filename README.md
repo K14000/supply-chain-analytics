@@ -55,6 +55,31 @@ The visualization dashboard displays:
 - Implement forecasting models
 - Create automated reporting
 - Deploy as web dashboard
+- ## SQL Module (SQLite)
+Built a supply chain database from scratch and wrote analyst-level queries.
+
+- supply_chain_sql.py — database setup, CREATE tables, INSERT data, basic SELECT
+- sql_02_filtering.py — WHERE, AND/OR, ORDER BY
+- sql_03_aggregations.py — SUM, AVG, COUNT, GROUP BY, HAVING
+- sql_04_joins.py — INNER JOIN across 3 tables (orders, products, suppliers)
+- sql_05_analyst_report.py — CASE statements, subqueries, full performance report
+
+Key outputs:
+- Stock level classification (Critical / Low / Healthy / Overstocked)
+- Supplier performance ranking by total spend and lead time
+- Full order report with action flags and supplier speed rating
+- Summary: $95,650 total spend across 8 orders, 9.5 day avg lead time
+- ## SQL Visualization
+Connected SQLite database directly to Matplotlib to produce a 4-chart dashboard.
+
+- sql_06_visualization.py — pulls live SQL query results into charts
+- sql_dashboard.png — generated dashboard
+
+Charts included:
+- Total spend per supplier (horizontal bar)
+- Stock status breakdown (bar — Critical / Low / Healthy / Overstocked)
+- Order value by status (pie — Delivered / Pending / Cancelled)
+- Lead time vs spend bubble chart (supplier risk view)
 
 ## Author
 
