@@ -69,6 +69,17 @@ Key outputs:
 - Supplier performance ranking by total spend and lead time
 - Full order report with action flags and supplier speed rating
 - Summary: $95,650 total spend across 8 orders, 9.5 day avg lead time
+- ## SQL Visualization
+Connected SQLite database directly to Matplotlib to produce a 4-chart dashboard.
+
+- sql_06_visualization.py — pulls live SQL query results into charts
+- sql_dashboard.png — generated dashboard
+
+Charts included:
+- Total spend per supplier (horizontal bar)
+- Stock status breakdown (bar — Critical / Low / Healthy / Overstocked)
+- Order value by status (pie — Delivered / Pending / Cancelled)
+- Lead time vs spend bubble chart (supplier risk view)
 
 ## Author
 
